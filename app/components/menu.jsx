@@ -20,57 +20,9 @@ class Menu extends React.Component {
       <div className={'menu ' + menuIn}>
         <button className="btn btn--unstyled menu__close-btn" onClick={this.menuClick}>Close</button>
         <ul className="nav">
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
+          <a href="/">Home</a>
+          <a href="/test">Test</a>
+          <a href="/dynamic/123">Dynamic Page</a>
         </ul>
       </div>
     )

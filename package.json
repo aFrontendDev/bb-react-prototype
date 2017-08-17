@@ -7,8 +7,9 @@
     "Andrew Blackledge (https://github.com/aFrontendDev)"
   ],
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "PROD_ENV=1 webpack"
+    "dev": "webpack-dev-server",
+    "build": "PROD_ENV=1 webpack",
+    "serve": "PROD_ENV=1 webpack -p && node server"
   },
   "dependencies": {
     "css-loader": "^0.28.4",
