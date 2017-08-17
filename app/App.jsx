@@ -1,17 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Switch, Route
 } from 'react-router-dom';
+
+// Routing
+import Routes from './routes.jsx';
 
 // menu, header and footer to be included on every page
 import Header from './components/_header/header.jsx';
 import Footer from './components/_footer/footer.jsx';
 import Menu from './components/menu.jsx';
-
-// Pages
-import Home from './pages/home';
-import TestPage from './pages/testpage';
-import DynamicPage from './pages/dynamicpage';
 
 
 export default class App extends React.Component {
@@ -36,12 +35,7 @@ export default class App extends React.Component {
 
         <main className="main" id="main">
           <div className="layout layout--a">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/test" component={TestPage} />
-              <Route path="/dynamic/:anId" component={DynamicPage} />
-              <Route component={Home} />
-            </Switch>
+            <Routes />
           </div>
         </main>
 
@@ -52,6 +46,6 @@ export default class App extends React.Component {
 }
 
 App.propTypes = {
-  menuIsIn: React.PropTypes.bool,
-  onMenuAction: React.PropTypes.func
+  menuIsIn: PropTypes.bool,
+  onMenuAction: PropTypes.func
 };

@@ -20,9 +20,9 @@ class Menu extends React.Component {
       <div className={'menu ' + menuIn}>
         <button className="btn btn--unstyled menu__close-btn" onClick={this.menuClick}>Close</button>
         <ul className="nav">
-          <a href="/">Home</a>
-          <a href="/test">Test</a>
-          <a href="/dynamic/123">Dynamic Page</a>
+          <li><a href="/">Home</a></li>
+          <li><a href="/test">Test</a></li>
+          <li><a href="/dynamic/123">Dynamic Page</a></li>
         </ul>
       </div>
     )
@@ -30,8 +30,8 @@ class Menu extends React.Component {
 }
 
 Menu.propTypes = {
-  menuIsIn: React.PropTypes.bool,
-  onMenuAction: React.PropTypes.func.isRequired
+  menuIsIn: PropTypes.bool,
+  onMenuAction: PropTypes.func.isRequired
 };
 
 export default Menu;

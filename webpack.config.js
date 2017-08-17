@@ -67,7 +67,8 @@ module.exports = {
   plugins: PROD ? [
     new CopyWebpackPlugin([
       {from:'./assets/images',to:'images'},
-      {from:'./assets/plugins',to:'plugins'}
+      {from:'./assets/plugins',to:'plugins'},
+      {from:'./_temp',to:'_temp'}
     ]),
     HtmlWebpackPluginConfig,
     new ExtractTextPlugin({ // define where to save the file
@@ -82,7 +83,8 @@ module.exports = {
   ] : [
     new CopyWebpackPlugin([
       {from:'./assets/images',to:'images'},
-      {from:'./assets/plugins',to:'plugins'}
+      {from:'./assets/plugins',to:'plugins'},
+      {from:'./_temp',to:'_temp'}
     ]),
     HtmlWebpackPluginConfig,
     new ExtractTextPlugin({ // define where to save the file
