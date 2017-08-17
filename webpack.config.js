@@ -30,7 +30,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.jsx$/, loader: ['babel-loader', 'eslint-loader'], exclude: /node_modules/ },
       { test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/, loader: 'file-loader', exclude: /node_modules/ },
       { // regular css files
         test: /\.css$/,
