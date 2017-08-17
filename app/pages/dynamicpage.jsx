@@ -13,10 +13,12 @@ class Dynamic extends React.Component {
   componentDidMount() {
     const anId = this.props.match.params.anId;
     console.log('anId: ' + anId);
+    document.title = `Page: ${anId}`;
 
     this.setState({
       urlParam: anId
     });
+
   }
 
   render() {

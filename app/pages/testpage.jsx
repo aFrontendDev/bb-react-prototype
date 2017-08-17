@@ -34,8 +34,10 @@ class Test extends React.Component {
       console.log(data);
 
       this.setState({
-        pageData: data
+        pageComponents: data.components
       });
+
+      document.title = data.pageTitle;
     })
     .catch((error) => {
       console.log(error);
@@ -50,8 +52,8 @@ class Test extends React.Component {
 
         <div className="components">
           {
-            this.state.pageData ?
-              this.state.pageData.map((component, index) => {
+            this.state.pageComponents ?
+              this.state.pageComponents.map((component, index) => {
 
                 switch(component.component) {
                   case 'promo':
