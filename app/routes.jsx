@@ -5,7 +5,7 @@ import {
 
 // Pages
 import Home from './pages/home';
-import TestPage from './pages/testpage';
+import ComponentSwitch from './pages/componentSwitch';
 import DynamicPage from './pages/dynamicpage';
 
 class Routes extends React.Component {
@@ -14,9 +14,8 @@ class Routes extends React.Component {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/test" component={TestPage} />
         <Route exact path="/dynamic/:anId" component={DynamicPage} />
-        <Route component={Home} />
+        <Route component={ComponentSwitch} />
       </Switch>
     )
   }

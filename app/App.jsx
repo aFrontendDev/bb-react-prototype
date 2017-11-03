@@ -34,9 +34,7 @@ export default class App extends React.Component {
         <Header menuAction={this.menuClick} />
 
         <main className="main" id="main">
-          <div className="layout layout--a">
-            <Routes />
-          </div>
+          <Routes />
         </main>
 
         <Footer />

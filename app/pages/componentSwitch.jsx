@@ -5,7 +5,7 @@ import axios from 'axios';
 import Promo from '../components/promo.jsx';
 import Feature from '../components/feature.jsx';
 
-class Test extends React.Component {
+class ComponentSwitch extends React.Component {
 
   constructor(props) {
     super(props);
@@ -70,4 +70,4 @@ class Test extends React.Component {
   }
 }
 
-export default Test;
+export default ComponentSwitch;
