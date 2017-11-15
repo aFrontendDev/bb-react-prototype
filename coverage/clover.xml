@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1510746787682" clover="3.2.0">
-  <project timestamp="1510746787682" name="All files">
-    <metrics statements="31" coveredstatements="29" conditionals="4" coveredconditionals="4" methods="14" coveredmethods="12" elements="49" coveredelements="45" complexity="0" loc="31" ncloc="31" packages="5" files="8" classes="8">
+<coverage generated="1510761221274" clover="3.2.0">
+  <project timestamp="1510761221274" name="All files">
+    <metrics statements="35" coveredstatements="32" conditionals="9" coveredconditionals="7" methods="15" coveredmethods="13" elements="59" coveredelements="52" complexity="0" loc="35" ncloc="35" packages="7" files="10" classes="10">
       <package name="app">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="helpers.js" path="/Users/andyblackledge/Sites/bb-react-prototype/app/helpers.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="3" count="2" type="stmt"/>
           <line num="4" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="app.actions">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="actionTypes.js" path="/Users/andyblackledge/Sites/bb-react-prototype/app/actions/actionTypes.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
         </file>
       </package>
       <package name="app.components">
@@ -55,20 +62,29 @@
           <line num="31" count="1" type="stmt"/>
         </file>
       </package>
+      <package name="app.reducers">
+        <metrics statements="3" coveredstatements="2" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <file name="menuReducer.js" path="/Users/andyblackledge/Sites/bb-react-prototype/app/reducers/menuReducer.js">
+          <metrics statements="3" coveredstatements="2" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="4" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="6" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="8" count="0" type="stmt"/>
+        </file>
+      </package>
       <package name="test">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <file name="jestsetup.js" path="/Users/andyblackledge/Sites/bb-react-prototype/test/jestsetup.js">
           <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="7" count="5" type="stmt"/>
-          <line num="9" count="5" type="stmt"/>
-          <line num="10" count="5" type="stmt"/>
-          <line num="11" count="5" type="stmt"/>
-          <line num="13" count="5" type="stmt"/>
+          <line num="7" count="6" type="stmt"/>
+          <line num="9" count="6" type="stmt"/>
+          <line num="10" count="6" type="stmt"/>
+          <line num="11" count="6" type="stmt"/>
+          <line num="13" count="6" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
         </file>
         <file name="tempPolyfills.js" path="/Users/andyblackledge/Sites/bb-react-prototype/test/tempPolyfills.js">
           <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="5" type="stmt"/>
+          <line num="1" count="6" type="stmt"/>
           <line num="2" count="0" type="stmt"/>
         </file>
       </package>
