@@ -14,6 +14,13 @@ const testData = {
   }
 };
 
+it('should render an empty promo', () => {
+  const tree = renderer.create(
+    <Promo data={{}} />
+  ).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
 
 it('should render a promo', () => {
   const tree = renderer.create(

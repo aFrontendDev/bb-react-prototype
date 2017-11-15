@@ -10,6 +10,14 @@ const testData = {
   "id": "id456"
 };
 
+it('should render an empty feature', () => {
+  const tree = renderer.create(
+    <Feature data={{}} />
+  ).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 
 it('should render a feature', () => {
   const tree = renderer.create(

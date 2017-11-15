@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for app/components/feature.jsx</title>
+    <title>Code coverage report for app/components/_header/header.jsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">All files</a> / <a href="index.html">app/components</a> feature.jsx
+      <a href="../../../index.html">All files</a> / <a href="index.html">app/components/_header</a> header.jsx
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>6/6</span>
       </div>
     </div>
   </div>
@@ -77,20 +77,9 @@
 32
 33
 34
-35
-36
-37
-38
-39
-40</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+35</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -100,10 +89,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -120,47 +111,41 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 import PropTypes from 'prop-types';
 &nbsp;
-import { createMarkup } from '../helpers.js';
-&nbsp;
-class Feature extends React.Component {
+class Header extends React.Component {
   
   constructor() {
     super();
+&nbsp;
+    this.clickHandle = this.clickHandle.bind(this);
+  }
+&nbsp;
+  clickHandle(e) {
+    e.preventDefault();
+    this.props.menuAction();
   }
 &nbsp;
   render() {
-    const jsonData = this.props.data;
-    
     return (
-&nbsp;
-      &lt;div className="section-block"&gt;
-        &lt;div className="layout layout--a"&gt;
-          &lt;div className="region region--a"&gt;
-            &lt;div className="region-inner"&gt;
-&nbsp;
-              &lt;article className="block block--size-a feature-test" id={jsonData.id}&gt;
-                &lt;h1&gt;{jsonData.title}&lt;/h1&gt;
-                &lt;div dangerouslySetInnerHTML={createMarkup(jsonData.copy)} /&gt;
-              &lt;/article&gt;
-&nbsp;
-            &lt;/div&gt;
-          &lt;/div&gt;          
-        &lt;/div&gt;
-      &lt;/div&gt;
+      &lt;header className="header" id="header" role="banner" itemScope itemType="http://schema.org/WPHeader"&gt;
+        &lt;button className="header__menu-btn btn btn--unstyled" onClick={this.clickHandle}&gt;
+          &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;
+            &lt;path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"/&gt;
+          &lt;/svg&gt;
+        &lt;/button&gt;
+        &lt;h1 className="header__title" itemScope itemType="http://schema.org/WPHeader"&gt;&lt;a href="/"&gt;Page Header&lt;/a&gt;&lt;/h1&gt;
+      &lt;/header&gt;
     )
   }
 }
 &nbsp;
-Feature.propTypes = {
-  data: PropTypes.object
-}
+Header.propTypes = {
+  menuAction: PropTypes.func.isRequired,
+};
 &nbsp;
-&nbsp;
-export default Feature;</pre></td></tr>
+export default Header;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
@@ -169,7 +154,7 @@ export default Feature;</pre></td></tr>
   generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Nov 15 2017 11:53:07 GMT+0000 (GMT)
 </div>
 </div>
-<script src="../../prettify.js"></script>
+<script src="../../../prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -177,6 +162,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="../../sorter.js"></script>
+<script src="../../../sorter.js"></script>
 </body>
 </html>

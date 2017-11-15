@@ -34,3 +34,29 @@ exports[`should render a promo 1`] = `
   </div>
 </div>
 `;
+
+exports[`should render an empty promo 1`] = `
+<div
+  className="section-block"
+>
+  <div
+    className="layout layout--a"
+  >
+    <div
+      className="region region--a"
+    >
+      <div
+        className="region-inner"
+      >
+        <article
+          className="block block--size-a promo-test"
+          id={undefined}
+        >
+          <h1 />
+          <p />
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+`;

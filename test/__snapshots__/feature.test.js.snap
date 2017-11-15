@@ -33,3 +33,35 @@ exports[`should render a feature 1`] = `
   </div>
 </div>
 `;
+
+exports[`should render an empty feature 1`] = `
+<div
+  className="section-block"
+>
+  <div
+    className="layout layout--a"
+  >
+    <div
+      className="region region--a"
+    >
+      <div
+        className="region-inner"
+      >
+        <article
+          className="block block--size-a feature-test"
+          id={undefined}
+        >
+          <h1 />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": undefined,
+              }
+            }
+          />
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+`;
