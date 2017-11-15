@@ -5,6 +5,15 @@ import renderer from 'react-test-renderer';
 import menuReducer from '../app/reducers/menuReducer';
 import { actionTypes } from '../app/actions/actionTypes';
 
+it('should return default val', () => {
+  expect(
+    menuReducer(
+      undefined,
+      ''
+    )
+  ).toEqual(false);
+});
+
 it('should return menuIn true', () => {
   expect(
     menuReducer(
