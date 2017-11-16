@@ -14,7 +14,6 @@ gulp.task('run_backstop_test', shell.task([
 ]));
 
 gulp.task('open_port', function() {
-    var open = require('open');
     var serverPort = 4000;
     var localhost = 'http://localhost:' + serverPort;
 
