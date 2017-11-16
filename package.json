@@ -12,8 +12,8 @@
   },
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "PROD_ENV=1 webpack -p",
-    "serve": "PROD_ENV=1 webpack -p && node server",
+    "build": "webpack -p --env prod",
+    "serve": "webpack -p --env prod && node server",
     "visualref": "gulp backstop-ref",
     "visualtest": "gulp backstop-test",
     "test": "jest",
