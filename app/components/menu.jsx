@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class Menu extends React.Component {
 
@@ -20,9 +21,9 @@ class Menu extends React.Component {
       <div className={'menu ' + menuIn}>
         <button className="btn btn--unstyled menu__close-btn" onClick={this.menuClick}>Close</button>
         <ul className="nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/test">Test</a></li>
-          <li><a href="/dynamic/123">Dynamic Page</a></li>
+          <li><Link to={"/"}>Home</Link></li>
+          <li><Link to={"/test"}>Test</Link></li>
+          <li><Link to={"/dynamic/123"}>Dynamic Page</Link></li>
         </ul>
       </div>
     )

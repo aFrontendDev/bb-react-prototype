@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
   
@@ -23,6 +24,11 @@ class Header extends React.Component {
           </svg>
         </button>
         <h1 className="header__title" itemScope itemType="http://schema.org/WPHeader"><a href="/">Page Header</a></h1>
+        <ul>
+          <li><Link to={"/"}>Home</Link></li>
+          <li><Link to={"/test"}>Test</Link></li>
+          <li><Link to={"/dynamic/123"}>Dynamic Page</Link></li>
+        </ul>
       </header>
     )
   }
