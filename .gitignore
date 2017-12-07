@@ -4,10 +4,10 @@
 /node_modules
 
 # testing
-/coverage
+/backstop_data/bitmaps_test
 
 # production
-/build
+/dist
 
 # misc
 .DS_Store
