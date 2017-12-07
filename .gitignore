@@ -5,6 +5,7 @@
 
 # testing
 /backstop_data/bitmaps_test
+/coverage
 
 # production
 /dist
